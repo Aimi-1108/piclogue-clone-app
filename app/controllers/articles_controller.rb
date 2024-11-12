@@ -34,12 +34,20 @@ class ArticlesController < ApplicationController
         render :edit
       end
     end
+
+    def destroy
+      article = Article.find(params[:id])
+      article.destroy!
+      redirect_to root_path, notice: '削除に成功しました'
+    end
   
   
     private
     def article_params
       params.require(:article).permit(:title, :content)
     end
+
+  
 
 
 
