@@ -12,7 +12,6 @@ class Article < ApplicationRecord
     validates :title, presence: true
   validates :content, presence: true
 
-
   #length
   validates :title, length:{minimum: 2, maxmum: 100}
   validates :content, length:{minimum: 10}
