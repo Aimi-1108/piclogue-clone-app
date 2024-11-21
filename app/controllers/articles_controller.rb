@@ -25,11 +25,11 @@ class ArticlesController < ApplicationController
     end
 
     def edit
-      @article = current_user.articles.find(params[:id]) 
+      @article = current_user.articles.find(params[:id])
     end
 
     def update
-      @article = current_user.articles.find(params[:id]) 
+      @article = current_user.articles.find(params[:id])
       if @article.update(article_params)
         redirect_to article_path(@article),notice: '更新できました'
       else
@@ -39,10 +39,10 @@ class ArticlesController < ApplicationController
     end
 
     def destroy
-      article = Article.find(params[:id])
-      article.destroy!
-      redirect_to root_path, notice: '削除に成功しました'
-    end
+      article = current_user.articles.find(params[:id])
+    article.destroy!
+    redirect_to root_path, notice: '削除に成功しました'
+  end
 
     private
     def article_params
