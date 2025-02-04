@@ -12,8 +12,5 @@
     "node-sass": "8.0.0",
     "turbolinks": "^5.2.0"
   },
-  "version": "0.1.0",
-  "scripts": {
-    "start": "node index.js"
-  }
+  "version": "0.1.0"
 }
