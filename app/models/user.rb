@@ -57,6 +57,12 @@ class User < ApplicationRecord
     following_relationships.create!(following_id: user.id)
   end
 
+  def unfollow!(user)
+    relation = following_rerationships.find_by!(following_id: user.id)
+    reration.destroy!
+  end
+
+
   def prepare_profile
     profile || build_profile
   end
