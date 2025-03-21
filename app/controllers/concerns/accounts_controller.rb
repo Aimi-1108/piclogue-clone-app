@@ -1,5 +1,8 @@
 class AccountsController < ApplicationController
     def show
-      @account = User.find(params[:id])
+      @user = User.find(params[:id])
+      if @user == current_user
+        redirect_to profile_path
+      end
     end
 end
