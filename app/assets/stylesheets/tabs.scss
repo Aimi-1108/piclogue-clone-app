@@ -11,14 +11,21 @@
     width: 100%;
     text-align: center;
     cursor: pointer;
-
-    &.active {
-      background-color: $primary-color;
-      color: white;
+  
+    a {
+      display: block;
     }
 
-    &:hover {
-      opacity: 0.9;
+  &.active {
+    background-color: $primary-color;
+  }
+
+    a {
+      color: rgb(0, 0, 0);
     }
+
+  &:hover {
+    opacity: 0.9;
+  }
   }
 }

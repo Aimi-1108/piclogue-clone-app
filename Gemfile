@@ -29,6 +29,7 @@ gem 'devise'
 gem 'faker'
 gem 'hamlit'
 gem 'ffi', '~> 1.15.0'
+gem 'active_decorator'
 
 
 # Use Active Storage variant
