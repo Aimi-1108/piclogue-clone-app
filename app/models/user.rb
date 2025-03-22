@@ -43,15 +43,7 @@ class User < ApplicationRecord
     likes.exists?(article_id: article.id)
   end
 
-  def display_name
-    #if profile && profile.nickname
-     # profile.nickname 
-    #else
-      #self.email.split('@').first
-    #end
-#ぼっち演算子
-    profile&.nickname || self.email.split('@').first
-  end
+
 
   def follow!(user)
     user_id = get_user_id(user)
