@@ -10,6 +10,7 @@
     "@rails/activestorage": "^6.0.0",
     "@rails/ujs": "^6.0.0",
     "@rails/webpacker": "4.3.0",
+    "axios": "^1.8.4",
     "jquery": "^3.7.1",
     "trix": "^1.2.0",
     "turbolinks": "^5.2.0",
@@ -17,7 +18,12 @@
   },
   "version": "0.1.0",
   "devDependencies": {
+    "@babel/preset-env": "^7.26.9",
     "@webpack-cli/serve": "2.0.5",
     "webpack-dev-server": "3.11.2"
-  }
+  },
+  "browserslist": [
+    "defaults",
+    "IE 11"
+  ]
 }

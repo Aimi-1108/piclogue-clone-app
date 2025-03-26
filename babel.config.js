@@ -34,7 +34,9 @@ module.exports = function(api) {
           modules: false,
           exclude: ['transform-typeof-symbol']
         }
-      ]
+      ],
+      // ここに追記
+      '@babel/preset-env'
     ].filter(Boolean),
     plugins: [
       'babel-plugin-macros',
