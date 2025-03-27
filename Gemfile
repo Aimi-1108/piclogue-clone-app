@@ -22,6 +22,7 @@ gem 'jbuilder', '~> 2.7'
 # gem 'bcrypt', '~> 3.1.7'
 gem 'annotate'
 gem 'aws-sdk-s3', require: false
+gem 'active_model_serializers'
 gem 'better_errors'
 gem 'binding_of_caller'
 gem 'concurrent-ruby', '1.3.4'
