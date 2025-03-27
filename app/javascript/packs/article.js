@@ -1,5 +1,5 @@
 import $ from 'jquery'
-import axios from 'axios'
+import axios from 'modules/axios'
 import { csrfToken } from 'rails-ujs'
 import {
   listenInactiveHeartEvent,
