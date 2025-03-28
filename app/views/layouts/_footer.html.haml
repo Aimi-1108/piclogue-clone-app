@@ -1,0 +1,7 @@
+%footer.footer-container
+
+  - if I18n.locale == :en
+    = link_to '日本語', url_for(locale: :ja)
+  - else 
+    = link_to 'ENGLISH', url_for(locale: :en)
+    
