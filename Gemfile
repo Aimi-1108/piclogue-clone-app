@@ -31,6 +31,7 @@ gem 'faker'
 gem 'hamlit'
 gem 'ffi', '~> 1.15.0'
 gem 'active_decorator'
+gem 'sidekiq'
 
 
 # Use Active Storage variant
