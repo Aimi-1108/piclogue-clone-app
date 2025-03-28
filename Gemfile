@@ -48,6 +48,7 @@ group :development, :test do
   gem 'rubocop-rails'
   gem "net-http"
   gem 'rspec-rails'
+  gem 'factory_bot_rails'
 end
 
 group :development do
