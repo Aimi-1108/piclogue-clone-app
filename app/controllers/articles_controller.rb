@@ -2,7 +2,6 @@ class ArticlesController < ApplicationController
   before_action :set_article, only: [:show]
   before_action :authenticate_user!,only: [:new, :create, :edit, :update, :destroy]
     def index
-
       @articles = Article.all
     end
 
@@ -47,7 +46,6 @@ class ArticlesController < ApplicationController
     def article_params
       params.require(:article).permit(:title, :content, :eyecatch)
     end
-
 def set_article
   @article = Article.find(params[:id])
 end
