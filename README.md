@@ -1,24 +1,66 @@
-# README
+# piclogue(ピクログ)🍰
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 概要
 
-Things you may want to cover:
+「piclogue」は、自分の好きな画像とメッセージを投稿できるSNS風のアプリです。  
+誰でも簡単に使えるよう、シンプルな構造と直感的なデザインを心がけています。
 
-* Ruby version
+---
 
-* System dependencies
+## 🔗 リンク
 
-* Configuration
+※ 公開URLは後ほど追記予定です
 
-* Database creation
+---
 
-* Database initialization
+## 使用技術
 
-* How to run the test suite
+- HTML / CSS.SCSS / JavaScript / Webpacker
+- Ruby on Rails
+- YAML / JSON
+- GitHub  
+- SourceTree  
+- ChatGPT（コードや文章作成の補助として利用）
 
-* Services (job queues, cache servers, search engines, etc.)
+---
 
-* Deployment instructions
+## 主な機能・特徴
 
-* ...
+- ユーザー登録、ログイン / ログアウト機能  
+- 投稿の作成（画像・タイトル・本文の入力）  
+- 投稿への「いいね」機能（数のカウント表示あり）  
+- 投稿へのコメント機能（※一部未保存の課題あり）  
+- 投稿の編集・削除が可能  
+- 投稿の保存機能（お気に入りとして保存）  
+- ユーザープロフィールの編集（アバター画像・名前など）  
+- 言語切り替え機能（日本語 / 英語）  
+- ログインしていない場合、投稿機能を制限  
+- テキストエディター機能  
+  - 太字、リンク、囲み、箇条書き、番号、戻る など  
+- 投稿に関する通知のON / OFFを選択可能  
+- 投稿がデータベースに保存される（永続性あり）  
+- 不正な操作や未入力時にエラーメッセージを表示  
+
+---
+
+## 工夫した点・こだわり
+
+- シンプルなUI構成で、直感的に操作できるように設計しました  
+- 配色もシンプルに抑えることで、誰にとっても視覚的にわかりやすくしています  
+- 言語切り替えに対応し、日本語・英語どちらの環境でも使えるよう工夫しました  
+- テキスト編集機能を充実させ、よりブログらしい表現ができるようにしました
+
+---
+
+## 改善点・今後の課題
+
+- コメント機能のデータがストレージに保存されないため、永続化の実装が必要  
+- タイムライン（投稿の時系列表示）の機能が未実装  
+- 言語を英語に切り替えた際、プロフィール表示の性別が正しく切り替わらない不具合あり  
+
+---
+
+## ライセンス
+
+このプロジェクトは学習目的で制作されたものであり、商用利用はご遠慮ください。
+
